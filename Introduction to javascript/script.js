@@ -68,11 +68,6 @@ console.log(num2);
 
 
 
-
-
-
-
-
 // Equality operator
 // strict
 
