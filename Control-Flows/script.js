@@ -13,7 +13,7 @@ let age = 30;
 if (age === 25) {
     console.log("age is greater than 25") 
 }else if (age < 25) {
-    console.log("age is greater than 25")
+    console.log("age is less than 25")
 } else {
     console.log("Age is 30")
 }
@@ -82,6 +82,19 @@ const entry = temperature < 20 ? "it is a cool day" : "It is a hot day";
 
 console.log(entry);
 
+// Nested Ternary Operators
+
+let score = 85;
+let grade = score >= 90 ? "A" : 
+            score >= 80 ? "B" : 
+            score >= 70 ? "C" : 
+            score >= 60 ? "D" : "F";
+console.log(grade);
+
+
+let currentDate = new Date();
+
+console.log(currentDate);
 
 
 // Switch statment -- used when there a multiple possibl value for a variable.
@@ -92,14 +105,14 @@ switch(day) {
     case "monday":
         console.lod("Today is bright!")
         break;
-        case "Friday":
-            console.log("Jimoh Oloyin")
-            break;
-            case "Tuesday":
-                console.log("Today is Tuesday");
-                break;
-                default:
-                    console.log("It is a normal day");
+ case "Friday":
+        console.log("Jimoh Oloyin")
+         break;
+ case "Tuesday":
+        console.log("Today is Tuesday");
+         break;
+         default:
+         console.log("It is a normal day");
 }
 
     let order = "pizza"
@@ -110,15 +123,15 @@ switch(day) {
         break;
 
         case "pizzer":
-            console.log("You ordered pizzer ");
+         console.log("You ordered pizzer ");
             break;
 
-            case "Doughnut":
-                console.log("This is Doughut");
+         case "Doughnut":
+           console.log("This is Doughut");
                 break;
 
-                default:
-                    console.log("invalid order.... please select from the menu");
+         default:
+            console.log("invalid order.... please select from the menu");
     }
 
 
@@ -144,9 +157,9 @@ switch(day) {
         break
 
         default:
-            dayName = "not available "
+        dayName = "not available "
         } 
-            console.log(`day ${dayNumber} is ${dayName}`)
+        console.log(`day ${dayNumber} is ${dayName}`)
 
 
             
@@ -158,18 +171,18 @@ switch(day) {
                 break;
         
                 case "Editor":
-                    console.log("welcome editor");
+                console.log("welcome editor");
                     break;
         
-                    case "Viewer":
-                        console.log("Welcome Viewer");
+                case "Viewer":
+                console.log("Welcome Viewer");
                         break;
         
-                        default:
-                            console.log("unknow rool please contact support");
+                default:
+                console.log("unknow rool please contact support");
             }
 
-
+            
 
             //Loops are used to execute a block of code multiple times.
             
@@ -185,7 +198,8 @@ switch(day) {
             for (let i = 1; i <= 10; i++) {
                 console.log(`${table} * ${i} = ${table * i}`)
             }
-        
+            
+          
         
             // Example2
 
@@ -223,6 +237,12 @@ for (let i = 1; i < fruit.length; i++){
     console.log(key + ":", user [key])
    }
 
+
+   let myName = {name: Alabi, city: Abuja, age: 12}
+
+   for(key in myName) {
+    console.log(key + ":", myName[key])
+   }
    //for of loop
 
    let colours = ["Blue", "Red", "Yello", "Pink"]
@@ -259,6 +279,33 @@ while(y < 5) {
     console.log(y)
 }
 
+// examples
+let w = 3;
+
+while(w <= 7){
+  console.log(w)
+  w++
+}
+
+// ===========================
+let cookies = 3;
+
+while (cookies > 0) {
+    console.log(cookies + " cookies left.");
+    cookies--;
+}
+
+// ===================_______
+
+let fruitss = ["Apples", "Mangoes", "Oranges", "Watermelon"];
+let z = 0;
+while (z < fruitss.length){
+  console.log(fruitss[z]);
+  z++;
+}
+
+// ============================..
+
 let fruits = ["apple", "banana", "cherry"];
 let i = 0;
 
@@ -282,7 +329,6 @@ numbers.forEach(function(number) {
 });
 
 
-
-
+console.log((2*6)+3-3*7/3*5%2)
 
 

@@ -69,35 +69,6 @@ function dayWeek (day) {
 console.log(dayWeek("Monday"))
 
 
-
-// function Years (months) {
-//     switch(day) {
-//         case "January":
-
-//         case "February":
-//             return "A bright day"
-
-//         case "wednesday":
-//             return "Dry day"
-
-//         case "Thursday":
-//             return "wet"
-
-//         case "Friday":
-//             return "hectic"
-
-//         case "Saturday":
-//             return "Sunny day"
-
-//         case "Sunday":
-//                 return "not sunny day"
-
-//         default:
-//                 "hmmmm"
-//     }
-// }
-// console.log(dayWeek("Monday"))
-
 const checkumber = (num) => {
     if (num > 0) {
         return "positive"
@@ -188,3 +159,5 @@ function Dray (name) {
 }
 
 Dray("Damilare")  
+
+console.log( `Dammy \n Damilare`)

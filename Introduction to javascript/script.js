@@ -105,5 +105,6 @@ console.log("\t\n" == 0);
 console.log("damilare" == "dare")
 console.log([1, 2] == "1, 2")
 
-
+let id1 = Symbol("dammy");
+console.log(id1 ) 
 
