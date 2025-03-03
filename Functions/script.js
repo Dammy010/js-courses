@@ -99,13 +99,28 @@ const login = (username, password, isAdmin) => {
 
 console.log(login( "user","pass123", true))
 
+// Example 1
+
+const registration = (surname, firstname, lastname, password, email) => {
+    if (!surname || !firstname || !lastname || !password) return "Please fill your details";
+
+    if (password.length < 6) return "minimum of 6 character";
+
+    return surname === "Akinola" && firstname === "Dolapo" && lastname === "Habeeb" && password === "Dolly1234" ? "Already registered" : "Invalid Details"
+
+}
+
+console.log(registration("Akinola", "Dolapo", "Habeeb", "Dolly1234"));
+
+
+// Example 2
 
 const register = (fullname, password) => {
     if (!fullname || !password) return "Go back and fill the form";
 
    if (password.lenght < 6) return "minimom of 6 characters";
 
-   return fullname === "Damilare" && password === "dammy1234" ? "user already exits": `${fullname} succefully registered`
+   return fullname === "Damilare" && password === "dammy1234" ? "user already exits": "Invalid Details"
 }
 
 console.log(register("Damilare", "dammy1234"))
@@ -159,5 +174,3 @@ function Dray (name) {
 }
 
 Dray("Damilare")  
-
-console.log( `Dammy \n Damilare`)

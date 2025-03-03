@@ -45,5 +45,8 @@ switch (year) {
                 console.log("It is a normal month")
 }
 
+    function add (name) {
+        return "Hello" +  "Damilare"
+    }
     
-   
+    console.log(add ("name"))
