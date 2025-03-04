@@ -74,7 +74,7 @@ container.innerHTML = `
 
 // STYLING
 
-container.style.backgroundColor = "black"
+container.style.backgroundColor = "blue"
 container.style.color = "white"
 
 // ADDING & REMOVING CLASSES
@@ -139,3 +139,21 @@ newBox.textContent = "How are you doing Today"
 
 
 document.body.appendChild(newBox)
+
+const box = document.getElementById("box")
+
+const newH1 = document.createElement("h1")
+
+newH1.textContent = "Dammy"
+newH1.style.color ="pink"
+
+box.appendChild(newH1)
+
+document.getElementById("boxs").addEventListener("mousemove", function(){
+    document.getElementById("boxs").style.backgroundColor = "blue"
+})
+
+document.getElementById("boxs").addEventListener("mouseout", function(){
+    document.getElementById("boxs").style.backgroundColor = "brown"
+})
+
