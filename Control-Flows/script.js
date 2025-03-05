@@ -184,33 +184,33 @@ switch(day) {
 
             
 
-            //Loops are used to execute a block of code multiple times.
+//Loops are used to execute a block of code multiple times.
             
-            // for (initialization; condition; update) {
-             //  // code execute
-           // }
+     // for (initialization; condition; update) {
+      //  // code execute
+    // }
 
-            for(let i = 0; i < 10; i++) {
+     for(let i = 0; i < 10; i++) {
                 console.log(i)
             }
 
-            let table = 5;
-            for (let i = 1; i <= 10; i++) {
-                console.log(`${table} * ${i} = ${table * i}`)
+    let table = 5;
+     for (let i = 1; i <= 10; i++) {
+      console.log(`${table} * ${i} = ${table * i}`)
             }
             
           
         
             // Example2
 
-            for (let i = 1; i < 10; i+=2) {
-                console.log(i)
-            }
+      for (let i = 1; i < 10; i+=2) {
+       console.log(i)
+           }
 
-            for(let i = 0; i <= 5; i++) {
-                if(i === 3) {
-                    continue
-                }
+    for(let i = 0; i <= 5; i++) {
+       if(i === 3) {
+           continue
+          }
                 console.log(i)
             }
            
@@ -238,11 +238,12 @@ for (let i = 1; i < fruit.length; i++){
    }
 
 
-   let myName = {name: Alabi, city: Abuja, age: 12}
+//    let myName = {name: Alabi, city: Abuja, age: 12}
 
-   for(key in myName) {
-    console.log(key + ":", myName[key])
-   }
+//    for(key in myName) {
+//     console.log(key + ":", myName[key])
+//    }
+
    //for of loop
 
    let colours = ["Blue", "Red", "Yello", "Pink"]
