@@ -299,6 +299,7 @@ console.log(student)
 
      console.log(filteredString)
 
+//=================================
 
      const nul = productWithId.map((value) => value.price)
       console.log(nul)
@@ -307,3 +308,117 @@ console.log(student)
       productWithId.map((value) => productPri += value.price )
 
       console.log(productPri)
+
+//==================================
+
+const studentNames = ["Dolu", "Soliu", "feranmi", "dammy"];
+
+const toUpperCaseStudenNames = studentNames.filter((name) => {
+
+  if (name.charAt(0) === name.charAt(0).toUpperCase()) return name
+})
+console.log({toUpperCaseStudenNames})
+
+
+// const pluralizedStudenNames = studentNames.filter((name) => {
+
+//   if (name.charAt(0) === name.charAt(0).toUpperCase()) return name
+// }).mad((element) => element + "s")
+
+// pluralizedStudenNames.push("Damilare")
+
+// console.log({pluralizedStudenNames})
+
+
+// forEach va map
+
+const userNames = [{name: "Bola", age: 15}, {name: "dammy", age: 10}]
+
+
+userNames.forEach((value) => value.age += 5)
+
+console.log(userNames)
+
+// map
+
+const newUserName = userNames.map((name, index) => ( 
+    {
+    ...name, age: name.age + 5, height: name.age + 10, id: index + 1
+}
+));
+
+console.log(newUserName)
+
+
+// ==========Reduce=============
+
+// syntax : Array.reduce ((accumulator, currentValue, currentIndex, array), initialValue)
+
+//1. Sum of Array elements
+//2. Flatten an Array
+//3. Occurence of a element/item in an Array
+//4. Find the maximum value
+//5. Grouping data by a property
+
+
+//Example 1: Sum of Array elements
+
+const myNums = [1, 2, 3, 4, 5];
+
+const sum = myNums.reduce((accumulator, currentValue) => (accumulator + currentValue), 0)
+
+console.log({sum})
+
+//Example 2: Flatten an Array
+
+const nestedArray = [[1, 2], [3, 4], [4, 6]];
+
+const flattenedArray = nestedArray.reduce((accumulator, currentValue) => (accumulator.concat(currentValue)), [])
+
+console.log(flattenedArray)
+
+
+const nonRepeatedResult = flattenedArray.reduce((acc, currentValue) => {
+    if (!acc.includes(currentValue)) {
+        acc.push(currentValue)
+    }
+
+    return acc
+}, []);
+
+console.log(nonRepeatedResult)
+
+// const nestedArray2 = [[1, 2], [[3, 4], [5, 6]], [7, 8]]
+
+// const flattenedArray2 = nestedArray2.reduce((acc, currValue, currentIndex, array) => {
+
+
+//     if(typeof currValue[0] === "object") {
+
+//         const 
+//     }
+// })
+
+
+
+//Example 3: Occurence of a element/item in an Array
+
+const myFruits = ["Grape", "Banana", "Banana", "Orange"]
+
+const fruitrsCount = myFruits.reduce((acc, curr) => {
+
+    acc[curr] = (acc[curr] || 0) + 1;
+
+    return acc
+}, {})
+
+console.log(fruitrsCount)
+
+
+//Example 4: Find the maximum value
+
+const maxEample = [10, 30, 3, 100, 4]
+
+const max = maxEample.reduce((acc, curr) => curr > acc ? curr : acc, maxEample[0]);
+
+console.log(max)
